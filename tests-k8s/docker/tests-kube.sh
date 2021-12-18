@@ -553,6 +553,7 @@ wait
 ### farewell message
 echo "Tar generated. Copy with:"
 echo "kubectl -n ${k8s_namespace} cp $tester_pod:download-results/results.tar.gz results.tar.gz"
+echo "kubectl -n ${k8s_namespace} cp $tester_pod:download-results/results-small.tar.gz results.tar.gz"
 echo "devspace sync --namespace=${k8s_namespace} --pod=$tester_pod --container-path=download-results --download-only --no-watch"
 
 echo "Tests finished!"
